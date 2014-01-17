@@ -181,9 +181,14 @@ config.webserver = {
 }
 
 
-// not working, leave as is
+// not working, leave as is - Changed semicolon for coma, seems fixed.
 config.debug = {
-  enabled: false;
+  enabled: false,
+}
+
+// added this as it's not been declared and candleManager.js needs it.
+config.backtest = {
+  enabled: true,
 }
 
 module.exports = config;
